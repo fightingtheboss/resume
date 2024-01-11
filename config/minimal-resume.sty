@@ -1,7 +1,7 @@
 \ProvidesPackage{config/minimal-resume}
 
 % margin
-\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[top=0.75in, bottom=0.75in, left=1in, right=1in]{geometry}
 
 % minimal custom packages
 \usepackage[T1]{fontenc}
@@ -72,10 +72,11 @@
   \fontsize{\sizefour}{\sizefour}\fontspec[Path = fonts/,LetterSpace=10]{Montserrat-Bold}
   \textbf{#1}
   }
-  \vspace{\sizefour}
+  \vspace{\sizefive}
   {#2}
   }
   \end{addmargin}
+  \vspace{\sizefour}
 }
 
 \newcommand{\subchap}[3]{
