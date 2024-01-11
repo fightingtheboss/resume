@@ -9,6 +9,8 @@
 \usepackage[babel=true]{microtype}
 \usepackage[fontsize=10.75pt]{scrextend}
 \usepackage{enumitem}
+\usepackage[hidelinks=true]{hyperref}
+\usepackage{fancyhdr}
 
 \defaultfontfeatures{Ligatures=TeX}
 
@@ -29,6 +31,13 @@
 
 % line spaces
 \newcommand{\linespaceone}{1}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{
+    {\fontsize{\sizefour}{\sizefour}\fontspec[Path = fonts/]{Montserrat-Light} The \LaTeX{} source for this resumé can be found at \href{https://github.com/fightingtheboss/resume}{github.com/fightingtheboss/resume}}
+}
 
 \newenvironment{newitemize}
   {\itemize[nolistsep,topsep=\sizefive,itemsep=\sizefive,labelsep=\sizefour,leftmargin=*]}
